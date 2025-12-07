@@ -14,6 +14,7 @@ import PrivacyPolicy from './components/PrivacyPolicy'
 import License from './components/License'
 import Marketing from './components/Marketing'
 import ScrollToTop from './components/ScrollToTop'
+import Welcome from './components/Welcome'
 
 const Home = () => (
   <>
