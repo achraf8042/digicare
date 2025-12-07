@@ -37,6 +37,7 @@ function App() {
         <Route path="/help-center" element={<HelpCenter />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/license" element={<License />} />
+        <Route path="/welcome" element={<Welcome />} />
       </Routes>
       <Footer />
     </Router>
