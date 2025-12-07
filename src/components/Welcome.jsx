@@ -88,7 +88,7 @@ const Welcome = () => {
                                     <p className="text-muted small mb-0">Keep this information safe for your records</p>
                                 </div>
                                 <div className="col-md-6 text-md-end mt-3 mt-md-0">
-                                    <a href="#" className="btn btn-lg btn-primary rounded-pill px-4 hover-lift">
+                                    <a href="https://drive.google.com/file/d/184cQrhKikuyh9kub8Wl1rTzP-NUkKAbL/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="btn btn-lg btn-primary rounded-pill px-4 hover-lift">
                                         <i className="fas fa-download me-2"></i>Download DigiCare EMR
                                     </a>
                                 </div>
