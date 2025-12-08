@@ -4,7 +4,7 @@ const Benefits = () => {
     return (
         <section className="benefits" style={{ background: 'transparent' }}>
             <div className="container">
-                <h2 className="section-title text-center">Why Choose DigiCare EMR?</h2>
+                <h2 className="section-title text-center">Why Choose DigiSpher EMR?</h2>
                 <p className="text-center text-muted mb-5 section-subtitle">Built specifically for solo practitioners</p>
 
                 <div className="row">

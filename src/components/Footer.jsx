@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-lg-4 mb-4">
                         <h5 className="text-white">
-                            <i className="fas fa-heartbeat me-2 text-primary"></i>DigiCare EMR
+                            <i className="fas fa-heartbeat me-2 text-primary"></i>DigiSpher EMR
                         </h5>
                         <p className="text-muted">Complete Electronic Medical Records solution for solo practitioners. Secure, professional, and on-premise.</p>
                         <div className="social-links mt-3">
@@ -60,7 +60,7 @@ const Footer = () => {
 
                 <div className="row">
                     <div className="col-md-6 text-center text-md-start">
-                        <p className="text-muted mb-0">&copy; 2025 DigiCare EMR Systems. All rights reserved.</p>
+                        <p className="text-muted mb-0">&copy; 2025 DigiSpher EMR Systems. All rights reserved.</p>
                     </div>
                     <div className="col-md-6 text-center text-md-end">
                         <Link to="/privacy" className="me-3 text-muted">Privacy Policy</Link>

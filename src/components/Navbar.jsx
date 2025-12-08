@@ -24,8 +24,8 @@ const Navbar = () => {
         <nav className={`navbar navbar-expand-lg fixed-top ${scrolled ? 'nav-scrolled' : ''}`}>
             <div className="container">
                 <Link className="navbar-brand" to="/">
-                    <img src="/logo.svg" alt="DigiCare Logo" height="40" className="me-2 rounded-3" />
-                    DigiCare EMR
+                    <img src="/logo.svg" alt="DigiSpher Logo" height="40" className="me-2 rounded-3" />
+                    DigiSpher EMR
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span className="navbar-toggler-icon" style={{ filter: 'invert(1)' }}></span>

@@ -13,7 +13,7 @@ const Hero = () => {
                             Complete <span className="text-gradient">EMR Solution</span> for Solo Practitioners
                         </h1>
                         <p className="lead">
-                            Streamline your practice with DigiCare EMR - the all-in-one electronic medical records system designed for independent healthcare providers. Secure, professional, and on-premise.
+                            Streamline your practice with DigiSpher EMR - the all-in-one electronic medical records system designed for independent healthcare providers. Secure, professional, and on-premise.
                         </p>
                         <div className="d-flex gap-3 flex-wrap">
                             <a href="#pricing" className="btn btn-primary-custom btn-lg">
@@ -26,7 +26,7 @@ const Hero = () => {
                     </div>
                     <div className="col-lg-6 mt-5 mt-lg-0 text-center">
                         <div className="hero-image-wrapper">
-                            <img src="/hero_image_1765031891862.png" alt="DigiCare EMR Dashboard" className="img-fluid hero-image" />
+                            <img src="/hero_image_1765031891862.png" alt="DigiSpher EMR Dashboard" className="img-fluid hero-image" />
                         </div>
                     </div>
                 </div>

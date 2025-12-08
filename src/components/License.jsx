@@ -6,7 +6,7 @@ const License = () => {
             <div className="container pt-5">
                 <div className="text-center mb-5">
                     <h1 className="display-4 fw-bold mb-3"><i className="fas fa-file-contract text-primary me-3"></i>License <span className="text-gradient">Agreement</span> (EULA)</h1>
-                    <p className="lead text-muted">DigiCare EMR Software License Terms</p>
+                    <p className="lead text-muted">DigiSpher EMR Software License Terms</p>
                 </div>
 
                 <div className="glass-panel p-5 rounded-4 mb-5 mx-auto" style={{ maxWidth: '900px' }}>
@@ -17,7 +17,7 @@ const License = () => {
                     </div>
 
                     <h2 className="text-white mb-4">1. License Grant</h2>
-                    <p className="text-muted mb-4">Subject to the terms and conditions of this EULA, DigiCare EMR Systems grants you a <strong>limited, non-exclusive, non-transferable license</strong> to use the Application solely for your personal or internal business purposes.</p>
+                    <p className="text-muted mb-4">Subject to the terms and conditions of this EULA, DigiSpher EMR Systems grants you a <strong>limited, non-exclusive, non-transferable license</strong> to use the Application solely for your personal or internal business purposes.</p>
 
                     <h2 className="text-white mb-4">2. Restrictions</h2>
                     <div className="bg-dark bg-opacity-50 p-4 rounded-3 mb-5">
@@ -29,7 +29,7 @@ const License = () => {
                     </div>
 
                     <h2 className="text-white mb-4">3. Ownership</h2>
-                    <p className="text-muted mb-5">The Application is <strong>licensed, not sold</strong>. All rights, title, and interest in and to the Application, including all intellectual property rights, remain with DigiCare EMR Systems.</p>
+                    <p className="text-muted mb-5">The Application is <strong>licensed, not sold</strong>. All rights, title, and interest in and to the Application, including all intellectual property rights, remain with DigiSpher EMR Systems.</p>
 
                     <h2 className="text-white mb-4">4. Disclaimer of Warranty</h2>
                     <div className="p-4 rounded-3 mb-5" style={{ background: 'rgba(239, 68, 68, 0.1)', border: '1px solid #ef4444' }}>

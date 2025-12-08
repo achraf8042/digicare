@@ -13,7 +13,7 @@ const Pricing = () => {
                             <div className="pricing-badge">40% OFF</div>
 
                             <div className="text-center mb-4">
-                                <h3 className="mb-3 text-white">DigiCare EMR - Solo Practitioner License</h3>
+                                <h3 className="mb-3 text-white">DigiSpher EMR - Solo Practitioner License</h3>
                                 <p className="original-price mb-2" style={{ opacity: 0.5 }}>$1,499</p>
                                 <div className="final-price">$899.40</div>
                                 <div className="discount-label" style={{ background: 'var(--accent)', color: 'black' }}>

@@ -6,7 +6,7 @@ const HelpCenter = () => {
             <div className="container pt-5">
                 <div className="text-center mb-5 animate-fade-in">
                     <h1 className="display-4 fw-bold mb-3">Professional <span className="text-gradient">User Guide</span></h1>
-                    <p className="lead text-muted">Complete documentation & reference manual for DigiCare EMR</p>
+                    <p className="lead text-muted">Complete documentation & reference manual for DigiSpher EMR</p>
                 </div>
 
                 <div className="row g-4 mb-5">
@@ -36,7 +36,7 @@ const HelpCenter = () => {
                         {/* Introduction */}
                         <div id="intro" className="glass-panel p-5 rounded-4 mb-5">
                             <h2 className="text-white mb-4"><i className="fas fa-hospital-user text-primary me-3"></i>Introduction</h2>
-                            <p className="text-muted"><strong>DigiCare EMR</strong> is a comprehensive Electronic Medical Record system designed for solo practitioners and small clinics. This desktop application provides a complete suite of tools to manage patient records, appointments, clinical notes, prescriptions, and more.</p>
+                            <p className="text-muted"><strong>DigiSpher EMR</strong> is a comprehensive Electronic Medical Record system designed for solo practitioners and small clinics. This desktop application provides a complete suite of tools to manage patient records, appointments, clinical notes, prescriptions, and more.</p>
                         </div>
 
                         {/* Login & Security */}

@@ -4,7 +4,7 @@ const Screenshots = () => {
     return (
         <section id="screenshots" className="screenshots" style={{ background: 'transparent' }}>
             <div className="container">
-                <h2 className="section-title text-center">See DigiCare EMR in Action</h2>
+                <h2 className="section-title text-center">See DigiSpher EMR in Action</h2>
                 <p className="text-center text-muted mb-5 section-subtitle">Full-screen screenshots from the actual system</p>
 
                 <div id="screenshotsCarousel" className="carousel slide" data-bs-ride="carousel">
