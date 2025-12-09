@@ -36,7 +36,7 @@ const Pricing = () => {
                             </ul>
 
                             <div className="text-center mt-4">
-                                <a href="https://digicare.lemonsqueezy.com/buy/4cfca6ea-a1ca-483e-9b32-698ecfd98b37" className="btn btn-primary-custom btn-lg w-100 shadow-lg" target="_blank" rel="noopener noreferrer">
+                                <a href="https://digispher.lemonsqueezy.com/checkout" className="btn btn-primary-custom btn-lg w-100 shadow-lg" target="_blank" rel="noopener noreferrer">
                                     <i className="fas fa-shopping-cart me-2"></i>Get It Now - $899.40
                                 </a>
                                 <p className="mt-3 text-muted">
