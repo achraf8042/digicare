@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Welcome = () => {
     const [searchParams] = useSearchParams();
     const navigate = useNavigate();
+    const { i18n } = useTranslation();
     const [isValid, setIsValid] = useState(false);
     const [countdown, setCountdown] = useState(5);
     const [copiedField, setCopiedField] = useState(null);
@@ -87,9 +89,12 @@ const Welcome = () => {
                                     <h4 className="text-white mb-1"><i className="fas fa-receipt text-primary me-2"></i>Order Details</h4>
                                     <p className="text-muted small mb-0">Keep this information safe for your records</p>
                                 </div>
-                                <div className="col-md-6 text-md-end mt-3 mt-md-0">
-                                    <a href="https://mega.nz/file/v4RTBKSC#yme49HLguhBn7KhlRM683NUfQUHuXKYRtXr6yOuqlsI" target="_blank" rel="noopener noreferrer" className="btn btn-lg btn-primary rounded-pill px-4 hover-lift">
-                                        <i className="fas fa-download me-2"></i>Download DigiSpher EMR
+                                <div className="col-md-6 text-md-end mt-3 mt-md-0 d-flex gap-2 justify-content-md-end flex-wrap">
+                                    <a href="https://mega.nz/file/v4RTBKSC#yme49HLguhBn7KhlRM683NUfQUHuXKYRtXr6yOuqlsI" target="_blank" rel="noopener noreferrer" className="btn btn-primary rounded-pill px-3 hover-lift">
+                                        <i className="fas fa-download me-2"></i>Download EN
+                                    </a>
+                                    <a href="https://mega.nz/file/v4RTBKSC#yme49HLguhBn7KhlRM683NUfQUHuXKYRtXr6yOuqlsI" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary rounded-pill px-3 hover-lift">
+                                        <i className="fas fa-download me-2"></i>Download FR
                                     </a>
                                 </div>
                             </div>
@@ -117,10 +122,9 @@ const Welcome = () => {
                                 {/* License Key */}
                                 <div className="col-md-6">
                                     <div className="p-3 rounded-3 bg-dark bg-opacity-50 border border-primary border-opacity-50 h-100 position-relative overflow-hidden">
-                                        <div className="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-10" style={{ pointerEvents: 'none' }}></div>
                                         <label className="text-primary small text-uppercase fw-bold mb-2">License Key</label>
                                         <div className="d-flex align-items-center justify-content-between">
-                                            <code className="text-warning fs-5 fw-bold">{licenseKey || "Check your email"}</code>
+                                            <code className="text-white fs-5 fw-bold" style={{ textShadow: '0 0 2px rgba(0,0,0,0.5)' }}>{licenseKey || "Check your email"}</code>
                                             {licenseKey && (
                                                 <button
                                                     onClick={() => handleCopy(licenseKey, 'license')}
