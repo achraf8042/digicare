@@ -93,7 +93,7 @@ const Welcome = () => {
                                     <a href="https://mega.nz/file/v4RTBKSC#yme49HLguhBn7KhlRM683NUfQUHuXKYRtXr6yOuqlsI" target="_blank" rel="noopener noreferrer" className="btn btn-primary rounded-pill px-3 hover-lift">
                                         <i className="fas fa-download me-2"></i>Download EN
                                     </a>
-                                    <a href="https://mega.nz/file/v4RTBKSC#yme49HLguhBn7KhlRM683NUfQUHuXKYRtXr6yOuqlsI" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary rounded-pill px-3 hover-lift">
+                                    <a href="https://mega.nz/file/3oRWjSpR#Z_UScIoblcWBuCOIsTnRCDIYFyT2tr5TNMcra4-DCQQ" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary rounded-pill px-3 hover-lift">
                                         <i className="fas fa-download me-2"></i>Download FR
                                     </a>
                                 </div>
