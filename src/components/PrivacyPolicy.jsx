@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
         <section className="privacy-policy pt-5 mt-5">
             <div className="container pt-5">
                 <div className="text-center mb-5">
-                    <h1 className="display-4 fw-bold mb-3"><i className="fas fa-shield-alt text-primary me-3"></i>{t('privacy.title')} <span className="text-gradient">Policy</span></h1>
+                    <h1 className="display-4 fw-bold mb-3"><i className="fas fa-shield-alt text-primary me-3"></i>{t('privacy.title')}</h1>
                     <p className="lead text-muted">{t('privacy.subtitle')}</p>
                     <div className="badge bg-dark border border-secondary p-2 mt-3">{t('privacy.lastUpdated')}</div>
                 </div>

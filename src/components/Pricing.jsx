@@ -31,7 +31,7 @@ const Pricing = () => {
                             </ul>
 
                             <div className="text-center mt-4">
-                                <a href="https://digispher.lemonsqueezy.com/checkout" className="btn btn-primary-custom btn-lg w-100 shadow-lg" target="_blank" rel="noopener noreferrer">
+                                <a href="https://digispher.lemonsqueezy.com/buy/bed9a70b-e76c-4b33-aa16-cfac8f9de210" className="btn btn-primary-custom btn-lg w-100 shadow-lg" target="_blank" rel="noopener noreferrer">
                                     <i className="fas fa-shopping-cart me-2"></i>{t('pricing.buyBtn')}
                                 </a>
                                 <p className="mt-3 text-muted">
