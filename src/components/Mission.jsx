@@ -1,6 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Mission = () => {
+    const { t } = useTranslation();
+
     return (
         <section className="mission-section position-relative overflow-hidden" style={{ padding: '150px 0 200px' }}>
             {/* Background Elements */}
@@ -11,52 +14,52 @@ const Mission = () => {
                 <div className="row justify-content-center">
                     <div className="col-lg-10">
                         <div className="text-center mb-5 animate-fade-in">
-                            <h2 className="display-4 fw-bold mb-5">Why We Built <span className="text-gradient">DigiSpher EMR</span></h2>
+                            <h2 className="display-4 fw-bold mb-5">{t('mission.title')} <span className="text-gradient">DigiSpher EMR</span></h2>
                             <p className="lead text-muted mx-auto fs-3" style={{ maxWidth: '900px' }}>
-                                Medicine should be about patients, not wrestling with complex software.
+                                {t('mission.subtitle')}
                             </p>
                         </div>
 
                         <div className="glass-panel p-5 rounded-5 mb-5">
                             <div className="row g-5 align-items-center">
                                 <div className="col-lg-6">
-                                    <h3 className="display-6 fw-bold mb-4 text-white">The Problem</h3>
+                                    <h3 className="display-6 fw-bold mb-4 text-white">{t('mission.problemTitle')}</h3>
                                     <p className="text-muted mb-4">
-                                        For years, solo practitioners have been forced to choose between expensive, bloated cloud-based systems or outdated, insecure legacy software.
+                                        {t('mission.problemDesc')}
                                     </p>
                                     <ul className="list-unstyled text-muted fs-5">
                                         <li className="mb-3 d-flex align-items-start">
                                             <i className="fas fa-times-circle text-danger mt-1 me-3"></i>
-                                            <span><strong>Data Privacy Risks:</strong> Cloud breaches are rising. Who really owns your patient data?</span>
+                                            <span><strong>{t('mission.privacyRisk')}</strong></span>
                                         </li>
                                         <li className="mb-3 d-flex align-items-start">
                                             <i className="fas fa-times-circle text-danger mt-1 me-3"></i>
-                                            <span><strong>Subscription Fatigue:</strong> Endless monthly fees for features you never use.</span>
+                                            <span><strong>{t('mission.subscriptionFatigue')}</strong></span>
                                         </li>
                                         <li className="mb-3 d-flex align-items-start">
                                             <i className="fas fa-times-circle text-danger mt-1 me-3"></i>
-                                            <span><strong>Internet Dependency:</strong> Can't access your records when the Wi-Fi goes down? That's unacceptable.</span>
+                                            <span><strong>{t('mission.internetDependency')}</strong></span>
                                         </li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="p-4 rounded-4" style={{ background: 'rgba(8, 145, 178, 0.1)', border: '1px solid var(--primary-dark)' }}>
-                                        <h3 className="display-6 fw-bold mb-4 text-white">Simplicity First</h3>
+                                        <h3 className="display-6 fw-bold mb-4 text-white">{t('mission.simplicityTitle')}</h3>
                                         <p className="text-muted mb-4">
-                                            <strong>DigiSpher EMR</strong> cuts through the noise. We designed it to be as simple as pen and paper, but smarter.
+                                            {t('mission.simplicityDesc')}
                                         </p>
                                         <ul className="list-unstyled text-white fs-5">
                                             <li className="mb-3 d-flex align-items-center">
                                                 <i className="fas fa-check-circle text-primary mt-1 me-3"></i>
-                                                <span><strong>100% On-Premise:</strong> Your data lives on your device. Secure, private, and yours.</span>
+                                                <span><strong>{t('mission.onPremise')}</strong></span>
                                             </li>
                                             <li className="mb-3 d-flex align-items-center">
                                                 <i className="fas fa-check-circle text-primary mt-1 me-3"></i>
-                                                <span><strong>One-Time Purchase:</strong> Pay once, own it forever. No hidden monthly costs.</span>
+                                                <span><strong>{t('mission.oneTimePurchase')}</strong></span>
                                             </li>
                                             <li className="mb-3 d-flex align-items-center">
                                                 <i className="fas fa-check-circle text-primary mt-1 me-3"></i>
-                                                <span><strong>Offline First:</strong> Works perfectly without an internet connection. Fast and reliable.</span>
+                                                <span><strong>{t('mission.offlineFirst')}</strong></span>
                                             </li>
                                         </ul>
                                     </div>
@@ -66,7 +69,7 @@ const Mission = () => {
 
                         <div className="text-center">
                             <p className="fs-3 text-muted fst-italic">
-                                "We created DigiSpher EMR to give independent doctors the tools they need to focus on what matters most: caring for their patients."
+                                "{t('mission.quote')}"
                             </p>
                         </div>
                     </div>

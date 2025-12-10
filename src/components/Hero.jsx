@@ -1,6 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+    const { t } = useTranslation();
+
     return (
         <section className="hero">
             <div className="blob hero-bg-blob-1"></div>
@@ -10,17 +13,17 @@ const Hero = () => {
                 <div className="row align-items-center">
                     <div className="col-lg-6 animate-fade-in">
                         <h1>
-                            Complete <span className="text-gradient">EMR Solution</span> for Solo Practitioners
+                            {t('hero.title')}
                         </h1>
                         <p className="lead">
-                            Streamline your practice with DigiSpher EMR - the all-in-one electronic medical records system designed for independent healthcare providers. Secure, professional, and on-premise.
+                            {t('hero.description')}
                         </p>
                         <div className="d-flex gap-3 flex-wrap">
                             <a href="#pricing" className="btn btn-primary-custom btn-lg">
-                                <i className="fas fa-rocket me-2"></i>Get Started Now
+                                <i className="fas fa-rocket me-2"></i>{t('hero.getStartedBtn')}
                             </a>
                             <a href="#demo" className="btn btn-outline-custom btn-lg">
-                                <i className="fas fa-play-circle me-2"></i>View Live Demo
+                                <i className="fas fa-play-circle me-2"></i>{t('hero.demoBtn')}
                             </a>
                         </div>
                     </div>

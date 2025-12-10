@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from 'react';
+import './i18n';
 import './index.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
@@ -8,6 +9,7 @@ import Screenshots from './components/Screenshots'
 import Demo from './components/Demo'
 import Pricing from './components/Pricing'
 import Benefits from './components/Benefits'
+import ComparisonFAQ from './components/ComparisonFAQ'
 import Footer from './components/Footer'
 import HelpCenter from './components/HelpCenter'
 import PrivacyPolicy from './components/PrivacyPolicy'
@@ -27,6 +29,7 @@ const Home = () => (
     <Demo />
     <Pricing />
     <Benefits />
+    <ComparisonFAQ />
   </>
 );
 

@@ -1,102 +1,75 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Features = () => {
+    const { t } = useTranslation();
+
+    const features = [
+        {
+            icon: 'fas fa-users',
+            titleKey: 'features.patientManagement.title',
+            descKey: 'features.patientManagement.desc'
+        },
+        {
+            icon: 'fas fa-calendar-alt',
+            titleKey: 'features.appointmentScheduling.title',
+            descKey: 'features.appointmentScheduling.desc'
+        },
+        {
+            icon: 'fas fa-file-medical',
+            titleKey: 'features.clinicalNotes.title',
+            descKey: 'features.clinicalNotes.desc'
+        },
+        {
+            icon: 'fas fa-prescription',
+            titleKey: 'features.ePrescription.title',
+            descKey: 'features.ePrescription.desc'
+        },
+        {
+            icon: 'fas fa-exclamation-triangle',
+            titleKey: 'features.allergyTracking.title',
+            descKey: 'features.allergyTracking.desc'
+        },
+        {
+            icon: 'fas fa-heartbeat',
+            titleKey: 'features.vitalSigns.title',
+            descKey: 'features.vitalSigns.desc'
+        },
+        {
+            icon: 'fas fa-shield-alt',
+            titleKey: 'features.security.title',
+            descKey: 'features.security.desc'
+        },
+        {
+            icon: 'fas fa-chart-line',
+            titleKey: 'features.analytics.title',
+            descKey: 'features.analytics.desc'
+        },
+        {
+            icon: 'fas fa-question-circle',
+            titleKey: 'features.help.title',
+            descKey: 'features.help.desc'
+        }
+    ];
+
     return (
         <section id="features" className="features">
             <div className="container">
-                <h2 className="section-title">Powerful Features</h2>
-                <p className="text-center text-muted mb-5" style={{ fontSize: '1.2rem' }}>Everything you need to manage your practice efficiently</p>
+                <h2 className="section-title">{t('features.title')}</h2>
+                <p className="text-center text-muted mb-5" style={{ fontSize: '1.2rem' }}>{t('features.subtitle')}</p>
 
                 <div className="row g-4">
-                    <div className="col-md-6 col-lg-4">
-                        <div className="feature-card">
-                            <div className="feature-icon">
-                                <i className="fas fa-users"></i>
+                    {features.map((feature, index) => (
+                        <div className="col-md-6 col-lg-4" key={index}>
+                            <div className="feature-card">
+                                <div className="feature-icon">
+                                    <i className={feature.icon}></i>
+                                </div>
+                                <h3>{t(feature.titleKey)}</h3>
+                                <p>{t(feature.descKey)}</p>
                             </div>
-                            <h3>Patient Management</h3>
-                            <p>Comprehensive patient records with demographics, contact information, allergy tracking, and vital signs monitoring. Quick search and detailed patient profiles at your fingertips.</p>
                         </div>
-                    </div>
-
-                    <div className="col-md-6 col-lg-4">
-                        <div className="feature-card">
-                            <div className="feature-icon">
-                                <i className="fas fa-calendar-alt"></i>
-                            </div>
-                            <h3>Appointment Scheduling</h3>
-                            <p>Smart appointment management with calendar views, status tracking, and automated reminders. Schedule, reschedule, and track appointments with ease.</p>
-                        </div>
-                    </div>
-
-                    <div className="col-md-6 col-lg-4">
-                        <div className="feature-card">
-                            <div className="feature-icon">
-                                <i className="fas fa-file-medical"></i>
-                            </div>
-                            <h3>Clinical Notes</h3>
-                            <p>Professional clinical documentation with structured templates. Export notes to PDF for printing or sharing with patients and other healthcare providers.</p>
-                        </div>
-                    </div>
-
-                    <div className="col-md-6 col-lg-4">
-                        <div className="feature-card">
-                            <div className="feature-icon">
-                                <i className="fas fa-prescription"></i>
-                            </div>
-                            <h3>E-Prescription</h3>
-                            <p>Generate professional prescriptions with drug name, dosage, frequency, and duration. Export to PDF with your signature. Integrated medication management system.</p>
-                        </div>
-                    </div>
-
-                    <div className="col-md-6 col-lg-4">
-                        <div className="feature-card">
-                            <div className="feature-icon">
-                                <i className="fas fa-exclamation-triangle"></i>
-                            </div>
-                            <h3>Allergy Tracking</h3>
-                            <p>Maintain detailed allergy records for each patient including allergen, reaction type, severity, and notes. Critical safety feature for prescription management.</p>
-                        </div>
-                    </div>
-
-                    <div className="col-md-6 col-lg-4">
-                        <div className="feature-card">
-                            <div className="feature-icon">
-                                <i className="fas fa-heartbeat"></i>
-                            </div>
-                            <h3>Vital Signs Monitoring</h3>
-                            <p>Track patient vitals including blood pressure, heart rate, temperature, weight, and oxygen saturation. Complete history for trend analysis.</p>
-                        </div>
-                    </div>
-
-                    <div className="col-md-6 col-lg-4">
-                        <div className="feature-card">
-                            <div className="feature-icon">
-                                <i className="fas fa-shield-alt"></i>
-                            </div>
-                            <h3>Privacy & Security</h3>
-                            <p>On-premise deployment means your data stays on your computer. No cloud storage, no recurring subscriptions. Complete control over patient information.</p>
-                        </div>
-                    </div>
-
-                    <div className="col-md-6 col-lg-4">
-                        <div className="feature-card">
-                            <div className="feature-icon">
-                                <i className="fas fa-chart-line"></i>
-                            </div>
-                            <h3>Analytics Dashboard</h3>
-                            <p>Real-time statistics showing total patients, today's appointments, weekly schedules, and recent activity. Make informed decisions with data insights.</p>
-                        </div>
-                    </div>
-
-                    <div className="col-md-6 col-lg-4">
-                        <div className="feature-card">
-                            <div className="feature-icon">
-                                <i className="fas fa-question-circle"></i>
-                            </div>
-                            <h3>Comprehensive Help</h3>
-                            <p>Built-in help documentation with step-by-step guides for all features. Password recovery with clinic verification for enhanced security.</p>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </section>

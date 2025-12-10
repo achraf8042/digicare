@@ -1,6 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Marketing = () => {
+    const { t } = useTranslation();
+
     return (
         <section className="marketing-section py-5 position-relative">
             {/* Background enhancement */}
@@ -8,12 +11,12 @@ const Marketing = () => {
 
             <div className="container position-relative z-2">
                 <div className="text-center mb-5 mx-auto animate-fade-in" style={{ maxWidth: '800px' }}>
-                    <h2 className="display-5 fw-bold mb-4">Built for <span className="text-gradient">Simplicity</span></h2>
+                    <h2 className="display-5 fw-bold mb-4">{t('marketing.title')} <span className="text-gradient">Simplicity</span></h2>
                     <p className="lead text-muted fs-4">
-                        Existing EMR solutions have a steep learning curve and are packed with complex features that solo doctors simply don't need.
+                        {t('marketing.subtitle')}
                     </p>
                     <p className="lead text-muted fs-4">
-                        That's why we created DigiSpher EMR.
+                        {t('marketing.subtitle2')}
                     </p>
                 </div>
 
@@ -26,8 +29,8 @@ const Marketing = () => {
                                 <i className="fas fa-magic text-primary fs-2"></i>
                             </div>
                             <h3 className="display-5 fw-bold text-white mb-2">Zero</h3>
-                            <h5 className="text-white mb-2">Learning Curve</h5>
-                            <p className="text-muted small">Intuitive design. No training required. Start treating patients in minutes.</p>
+                            <h5 className="text-white mb-2">{t('marketing.zeroLearning')}</h5>
+                            <p className="text-muted small">{t('marketing.zeroLearningDesc')}</p>
                         </div>
                     </div>
 
@@ -39,9 +42,9 @@ const Marketing = () => {
                                 style={{ width: '70px', height: '70px', borderRadius: '50%', background: 'rgba(245, 158, 11, 0.1)' }}>
                                 <i className="fas fa-feather-alt text-warning fs-2"></i>
                             </div>
-                            <h3 className="display-5 fw-bold text-white mb-2">Simple</h3>
-                            <h5 className="text-white mb-2">Streamlined Features</h5>
-                            <p className="text-muted small">We removed the clutter. Only the capabilities you actually need, without the complex features you don't.</p>
+                            <h3 className="display-5 fw-bold text-white mb-2">{t('marketing.simpleFeatures')}</h3>
+                            <h5 className="text-white mb-2"></h5>
+                            <p className="text-muted small">{t('marketing.simpleFeaturesDesc')}</p>
                         </div>
                     </div>
 
@@ -53,8 +56,8 @@ const Marketing = () => {
                                 <i className="fas fa-shield-alt text-secondary fs-2"></i>
                             </div>
                             <h3 className="display-5 fw-bold text-white mb-2">100%</h3>
-                            <h5 className="text-white mb-2">Private & Secure</h5>
-                            <p className="text-muted small">Your data, your rules. Stored locally on your machine. No cloud risks.</p>
+                            <h5 className="text-white mb-2">{t('marketing.privateSecure')}</h5>
+                            <p className="text-muted small">{t('marketing.privateSecureDesc')}</p>
                         </div>
                     </div>
                 </div>
@@ -62,12 +65,12 @@ const Marketing = () => {
                 {/* Call to Action Banner */}
                 <div className="glass-panel p-5 mt-5 rounded-4 text-center position-relative overflow-hidden">
                     <div className="position-relative z-2">
-                        <h2 className="display-6 fw-bold text-white mb-3">Ready for an EMR that keeps it simple?</h2>
+                        <h2 className="display-6 fw-bold text-white mb-3">{t('marketing.readyQuestion')}</h2>
                         <p className="lead text-muted mb-4 mx-auto" style={{ maxWidth: '700px' }}>
-                            Join hundreds of solo practitioners who have switched to DigiSpher EMR for a simpler, distraction-free workflow.
+                            {t('marketing.readyDesc')}
                         </p>
                         <a href="#pricing" className="btn btn-primary-custom btn-lg">
-                            <i className="fas fa-arrow-right me-2"></i>Get Started Now
+                            <i className="fas fa-arrow-right me-2"></i>{t('hero.getStartedBtn')}
                         </a>
                     </div>
                 </div>

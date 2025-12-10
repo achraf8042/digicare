@@ -102,6 +102,38 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-light) !important;
 }
 
+/* Mobile navbar controls - language switcher next to toggler */
+.navbar-mobile-controls {
+    display: none;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.navbar-lang-switcher {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .navbar-mobile-controls {
+        display: flex;
+    }
+    
+    .navbar-lang-switcher {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-mobile-controls {
+        display: none;
+    }
+    
+    .navbar-lang-switcher {
+        display: block;
+        margin-left: 1rem;
+    }
+}
+
 .btn-primary-custom {
     background: linear-gradient(135deg, var(--primary), var(--secondary));
     border: none;
